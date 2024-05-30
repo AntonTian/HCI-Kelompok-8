@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commentar Forum - LingkupAir</title>
+    <link rel="stylesheet" href="commenstyle.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="headerhome.css">
+    <link rel="stylesheet" href="footerstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+    <header>
+        <img src="Asset/IconLA.jpg" class="logoposition">
+        <div class = "infoHeader">
+            <h1>Commentar Forum</h1>
+            <div class = "shortcut-header">
+                <form>
+                    <div class = "search">
+                        <span class="search-icon material-symbols-outlined">search</span>
+                        <input class="search-input" type="search" placeholder="Search....">
+                    </div>
+                </form>
+                
+                
+                <p>Gabung Sekarang</p>
+                <a href="/Login/loginPage.html">Login</a>
+                <a href="/Register/registPage.html">Register</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div><span id="comment">0</span> Comments</div>
+        <div class="comments"></div>
+        <div class="commentbox">
+            <img src="Asset/usericon.png" alt="Icon">
+            <div class="content">
+                <h2>Comment as:</h2>
+                <input type="text"value = "Anonymous" class="user">
+
+                <div class="commentinput">
+                    <input type="text"placeholder="Enter comment" class="usercomment">
+                    <div class="buttons">
+                        <button type="submit"disabled id="publish">Publish</button>
+                        <div class="notify">
+                            <input type="checkbox" class="notifyinput"><span>Notify me</span>
+                        </div>
+                    </div>
+                </div>
+                <p>This site is protected by reCAPTCHA and the Google <a href="">privacy policy </a> and <a href=""> Terms of Service </a> apply.</p>
+            </div>
+        </div>        
+    </div>
+    <div class="complaint">
+        <a href="/Complaint/complaint.html">
+            <h2>Apakah Anda ada kendala terkait akses air bersih di wilayah Anda?</h2>
+        </a>
+    </div>
+    <footer>
+        <img src="Asset/IconLA.jpg" class="logofooter">
+        <div class="info">
+            <div class = "au_lil">
+                <div class = "namePro">LingkupAir</div>
+                <div class = "line"></div>
+                <div class = "desc">
+                    Menjembatani Kebutuhan Air Bersih
+                </div>
+            </div>
+            <div class = "directory">
+                <a href="/HomePage/homepage.html">Home</a>
+                <a href="/HelpCenter/help.html">Help</a>
+                <a href="/Feedback/feedback.html">Feedback</a>
+                <a href="/AboutUs/aboutus.html">About us</a>
+                <a href="/CommentarForum/comform.html">Forum</a>
+                <a href="https://chat.whatsapp.com/DNeYDMi7gkZAs0xv6IrK82">Whatsapp</a>
+                <a href="">Gmail</a>
+                
+            </div>
+            <p>Copyright © 2024 LingkupAir</p>
+        
+        </div>
+    </footer>
+    <script src="comlog.js"></script>
+
+</body>
+</html>
