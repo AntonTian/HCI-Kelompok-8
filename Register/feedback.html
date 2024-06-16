@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - LingkupAir</title>
+    <!-- Star -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="headerstyle.css">
+    <link rel="stylesheet" href="feestyle.css">
+    <link rel="stylesheet" href="footerstyle.css">
+    <link rel="stylesheet" href="blub.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    
+</head>
+<style>
+    img {
+        border: 5px solid #00009c;
+    }
+</style>
+<body>
+    <div id="bubble-container">
+        <header>
+            <img src="AssetIcon/IconLA.jpg" class="logoposition">
+            <div class = "info">
+                <div class = "login">
+                    <h1><b>Feedback Page</b></h1>
+                </div>
+                <div class = "shortcut-header">
+                    <a href="/HomePage/homepage.html">Home</a>
+                    <a href="/Article/article.html">Article</a>
+                    <a href="/CommentarForum/comform.html">Comment</a>
+                    <a href="/Complaint/complaint.html">Complaint</a>
+                    <a href="/FAQs/FAQs.html">FAQs</a>
+                    <a href="/Feedback/feedback.html">Feedback</a>
+                    <a href="/HelpCenter/help.html">Help</a>
+                    <a href="/AboutUs/aboutus.html">About us</a>
+                    <a href="/Login/loginPage.html">Login</a>
+                    <a href="/Register/registPage.html">Register</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <h3>Feedback, Please!</h3>
+            <form action=""name="textbox"onsubmit="return valid()">
+                <div class="rating">
+                    <input type="number" name="rating" hidden>
+                    <i class='bx bx-star star' style="--i: 0;"></i>
+                    <i class='bx bx-star star' style="--i: 1;"></i>
+                    <i class='bx bx-star star' style="--i: 2;"></i>
+                    <i class='bx bx-star star' style="--i: 3;"></i>
+                    <i class='bx bx-star star' style="--i: 4;"></i>
+                </div>
+    
+                <p class = "font-title">Apa pendapat Anda untuk platform situs web ini? (Kritik dan Saran)</p>
+                <input name="IFeed" type="text" placeholder="Enter the Text">
+                <label for=""></label>
+    
+                
+                <div id="result"class="validation">
+                    <p id="result"></p>
+                </div>
+                
+    
+                <div class = "buttonLog">
+                    <button type = "submit" class = "submitText" onclick="valid()" value="InputSub">Submit</a>
+                </div>  
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <span class="material-symbols-outlined">check_circle</span>
+            <h2>Submit Successful</h2>
+            <p>Keluhan Anda akan kami segera carikan solusinya, terima kasih</p>
+            <a href="/HomePage/homepage.html"><button onclick="closeSlide()">Continue to Homepage</button></a>
+        </div>
+        <footer>
+            <img src="AssetIcon/IconLA.jpg" class="logofooter">
+            <div class="info">
+                <div class = "au_lil">
+                    <div class = "namePro">LingkupAir</div>
+                    <div class = "line"></div>
+                    <div class = "desc">
+                        Menjembatani Kebutuhan Air Bersih
+                    </div>
+                </div>
+                <div class = "directory">
+                    <a href="/HomePage/homepage.html">Home</a>
+                    <a href="/HelpCenter/help.html">Help</a>
+                    <a href="/Feedback/feedback.html">Feedback</a>
+                    <a href="/AboutUs/aboutus.html">About us</a>
+                    <a href="/CommentarForum/comform.html">Forum</a>
+                    <a href="https://chat.whatsapp.com/DNeYDMi7gkZAs0xv6IrK82">Whatsapp</a>
+                    <a href="">Gmail</a>
+                    <a href="/FAQs/FAQs.html">FAQs</a>
+                    
+                </div>
+                <p>Copyright © 2024 LingkupAir</p>
+            
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="star.js"></script>
+    <script src="warnMessage.js"></script>
+    <script src="blub.js"></script>
+</body>
+</html>
