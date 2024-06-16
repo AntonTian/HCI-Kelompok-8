@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - LingkupAir</title>
+    <link rel="stylesheet" href="Register/headerstyle.css">
+    <link rel="stylesheet" href="Register/bodyregisStyle.css">
+    <link rel="stylesheet" href="Register/footerstyle.css">
+    <link rel="stylesheet" href="Register/font.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+	<script src=
+        "https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js">
+	</script>
+
+</head>
+<style>
+    img {
+        border: 5px solid #00009c;
+    }
+</style>
+    <body>
+        <div class = "full-landing-image">
+            <header>
+                <img src="Register/AssetIcon/IconLA.jpg" class="logoposition">
+                <div class = "info">
+                    <h1><b>Register Page</b></h1>
+                    <div class = "shortcut-header">
+                        <a href="index.html">Home</a>
+                        <a href="article.html">Article</a>
+                        <a href="comform.html">Comment</a>
+                        <a href="complaint.html">Complaint</a>
+                        <a href="FAQs.html">FAQs</a>
+                        <a href="feedback.html">Feedback</a>
+                        <a href="help.html">Help</a>
+                        <a href="aboutus.html">About us</a>
+                        <a href="loginPage.html">Login</a>
+                        <a href="registPage.html">Register</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class = "container">
+                <div class = "box">
+                    <form action=""name="textbox"onsubmit="return valid()">
+                        <div class = "Name">
+                            <p class = "font-title">Name</p>
+                            <span class="material-symbols-outlined">id_card</span>
+                            
+                        </div>
+                        
+                        <input class = "trans" name="IName" type="text" placeholder="  Enter the Text">
+                        <label for=""></label>
+
+                        <div class = "Username">
+                            <p class = "font-title">Username</p>
+                            <span class="material-symbols-outlined">person</span>
+                        </div>
+                        
+                        <input type="text" name="IUsername"placeholder="  Enter the Text">
+                        <label for=""></label>
+
+                        <div class="Email">
+                            <p class = "font-title">Email</p>
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+                        
+                        <input type="text" id="email" name="IEmail" placeholder="  Enter the Text">
+                        <label for=""></label>
+                        
+                        <div class="Email">
+                            <p class = "font-title">Confirm Email</p>
+                            <span class="material-symbols-outlined">mail</span>
+                        </div>
+
+                        <input type="text" name="ICEmail"placeholder="  Enter the Text">
+                        <label for=""></label>
+
+                        <div class="Pass">
+                            <p class = "font-title">Password</p>
+                            <span class="material-symbols-outlined">lock</span>
+                        </div>
+                        
+                        <input type="text" id="password" name="IPassword" placeholder="  Enter the Text">
+                        <label for=""></label>
+                        
+                        
+                        
+                        <div class="Pass">
+                            <p class = "font-title">Confirm Password</p>
+                            <span class="material-symbols-outlined">lock</span>
+                        </div>
+
+                        
+                        <input type="text" name="ICPassword"placeholder="  Enter the Text">
+                        <label for=""></label>
+                        
+                        <div class="already">
+                            <a href="loginPage.html">Already have an account?</a>
+                        </div>
+                        
+                        <div id="result"class="validation">
+                            <p id="result"></p>
+                        </div>
+                        
+
+                        <div class = "buttonLog">
+                            <button type = "submit" class = "loginText" onclick="valid()" value="Register">Register</a>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <span class="material-symbols-outlined">check_circle</span>
+                <h2>Register Successfull</h2>
+                <a href="index.html"><button onclick="closeSlide()">Continue to Homepage</button></a>
+            </div>
+            <footer>
+                <img src="Register/AssetIcon/IconLA.jpg" class="logofooter">
+                <div class="info">
+                    <div class = "au_lil">
+                        <div class = "namePro">LingkupAir</div>
+                        <div class = "line"></div>
+                        <div class = "desc">
+                            Menjembatani Kebutuhan Air Bersih
+                        </div>
+                    </div>
+                    <div class = "directory">
+                        <a href="index.html">Home</a>
+                        <a href="help.html">Help</a>
+                        <a href="feedback.html">Feedback</a>
+                        <a href="aboutus.html">About us</a>
+                        <a href="comform.html">Forum</a>
+                        <a href="https://chat.whatsapp.com/DNeYDMi7gkZAs0xv6IrK82">Whatsapp</a>
+                        <a href="">Gmail</a>
+                        <a href="FAQs.html">FAQs</a>
+                        
+                    </div>
+                        <p>Copyright © 2024 LingkupAir</p>
+                </div>
+            </footer> 
+        </div>
+        <script src="Register/water.js"></script>
+        <script src="Register/warnMessage.js"defer></script>
+    </body>
+   
+</html>
