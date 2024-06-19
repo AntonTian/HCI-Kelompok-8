@@ -1,0 +1,443 @@
+.nav-article {
+    align-self: flex-start;
+    font-size: 25px;
+    padding-top: 17px;
+    padding-left: 40px;
+  }
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+body .full-landing-image{
+	width: 100%;
+	height: 100%;
+	/* background: linear-gradient(to right,#0094ff, rgb(59, 146, 146)); */
+	background-size: cover;
+}
+.box {
+    
+    display: flex;
+    width: 100%;
+    height: 1200px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.Name,.Username,.Email,.Pass {
+    display: flex;
+    color: #0034bb;
+}
+
+.font-title {
+    
+    font-size: 30px;
+    color: #f9f9f9;
+    margin-top: 10px;
+    margin-right: 20px;
+
+}
+
+.Name .material-symbols-outlined {
+    color: #f9f9f9;
+    margin-top: 13px;
+    font-size: 40px;
+}
+.Username .material-symbols-outlined {
+    color: #f9f9f9;
+    margin-top: 13px;
+    font-size: 40px;
+}
+.Email .material-symbols-outlined {
+    color: #f9f9f9;
+    margin-top: 13px;
+    font-size: 40px;
+}
+.Pass .material-symbols-outlined {
+    color: #f9f9f9;
+    margin-top: 13px;
+    font-size: 40px;
+}
+
+form label{
+    position: absolute;
+    top:50px;
+    left: 5px;
+    transform: translateY(-50%);
+    
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #0034bb;
+    padding: 0 5px;
+    pointer-events: none;
+
+
+}
+
+/* Textbox + input */
+form input {
+    display: flex;
+    width: 1760px;
+    height: 60px;
+    margin-top: -13px;
+
+    font-size: 30px;
+    color:#0034bb;
+    padding-left: 5px;
+
+    background: #edfffe;
+    border:3px solid #edfffe;
+    border-radius: 39px;
+    font-weight: 10px;
+
+   
+    
+}
+/* ENter the text */
+::placeholder {
+    color: black;
+    opacity: 0.70;
+    font-size: 21px;
+}
+
+
+form input:focus {
+    border-color: #0034bb;
+}
+form input:focus::placeholder {
+    transition: transform 2s ease;
+    transform: translateX(-100%);
+}
+
+
+
+.already {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-size: 25px;
+    color: #0034bb;
+    margin-top: 50px;
+}
+
+#result {
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    color: yellowgreen;
+    position: relative;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.validation {
+    display: flex;
+    color: red;
+}
+.buttonLog {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -43px;
+}
+
+.buttonLog button {
+    width: 400px;
+    height: 100px;
+    margin-bottom: 30px;
+    /* border:2px solid #0034bb; */
+    background: linear-gradient(to right, #0034bb, #0094ff, rgb(104, 104, 249));
+    border-radius: 39px;
+    padding: 0.3%;
+    border-color: transparent;
+}
+
+.popup {
+    width: 700px;
+    height: 770px;
+
+    background-color: #edfffe;
+    border-radius: 20px;
+    position: fixed;
+
+    margin-top: -40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .4s, top .4s;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+
+    color: #0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup h2 {
+    color: #0034bb;
+    font-size: 60px;
+}
+
+.popup .material-symbols-outlined {
+    color: green;
+    font-size: 80px;
+}
+
+.popup button {
+    margin-bottom: 30px;
+    /* border:2px solid #0034bb; */
+    background: linear-gradient(to right, #0034bb, #0094ff, rgb(104, 104, 249));
+    border-radius: 39px;
+    padding: 0.3%;
+    border-color: transparent;
+    color: #edfffe;
+    width: 500px;
+    height: 200px;
+    font-size: 60px;
+}
+
+.open-slide {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+
+.loginText {
+    font-style: normal;
+    /* align-items: center; */
+    text-decoration: none;
+    font-style: normal;
+    font-size: 60px;
+    color: #edfffe;
+    margin-left: 40px;
+
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .nav-article {
+        align-self: flex-start;
+        font-size: 25px;
+        padding-top: 17px;
+        padding-left: 40px;
+      }
+    
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body .full-landing-image{
+        width: 100%;
+        height: 100%;
+        /* background: linear-gradient(to right,#0094ff, rgb(59, 146, 146)); */
+        background-size: cover;
+    }
+    .box {
+        
+        display: flex;
+        width: 100%;
+        height: 1200px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    
+    .Name,.Username,.Email,.Pass {
+        display: flex;
+        color: #0034bb;
+    }
+    
+    .font-title {
+        
+        font-size: 30px;
+        color: #f9f9f9;
+        margin-top: 10px;
+        margin-right: 20px;
+    
+    }
+    
+    .Name .material-symbols-outlined {
+        color: #f9f9f9;
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    .Username .material-symbols-outlined {
+        color: #f9f9f9;
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    .Email .material-symbols-outlined {
+        color: #f9f9f9;
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    .Pass .material-symbols-outlined {
+        color: #f9f9f9;
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    
+    form label{
+        position: absolute;
+        top:50px;
+        left: 5px;
+        transform: translateY(-50%);
+        
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #0034bb;
+        padding: 0 5px;
+        pointer-events: none;
+    
+    
+    }
+    
+    /* Textbox + input */
+    form input {
+        display: flex;
+        width: 660px;
+        height: 60px;
+        margin-top: -13px;
+    
+        font-size: 30px;
+        color:#0034bb;
+        padding-left: 5px;
+    
+        background: #edfffe;
+        border:3px solid #edfffe;
+        border-radius: 39px;
+        font-weight: 10px;
+    
+       
+        
+    }
+    /* ENter the text */
+    ::placeholder {
+        color: black;
+        opacity: 0.70;
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .nav-article {
+        align-self: flex-start;
+        font-size: 25px;
+        padding-top: 17px;
+        padding-left: 40px;
+      }
+    
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body .full-landing-image{
+        width: 100%;
+        height: 100%;
+        /* background: linear-gradient(to right,#0094ff, rgb(59, 146, 146)); */
+        background-size: cover;
+    }
+    .box {
+        
+        display: flex;
+        width: 100%;
+        height: 1200px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    
+    
+    .Name,.Username,.Email,.Pass {
+        display: flex;
+        color: #0034bb;
+    }
+    
+    .font-title {
+        
+        font-size: 30px;
+        color: #f9f9f9;
+        margin-top: 10px;
+        margin-right: 20px;
+    
+    }
+    
+    .Name .material-symbols-outlined {
+        color: #f9f9f9;
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    .Username .material-symbols-outlined {
+        color: #f9f9f9;
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    .Email .material-symbols-outlined {
+        color: #f9f9f9;
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    .Pass .material-symbols-outlined {
+        color: #f9f9f9;
+        margin-top: 13px;
+        font-size: 40px;
+    }
+    
+    form label{
+        position: absolute;
+        top:50px;
+        left: 5px;
+        transform: translateY(-50%);
+        
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #0034bb;
+        padding: 0 5px;
+        pointer-events: none;
+    
+    
+    }
+    
+    /* Textbox + input */
+    form input {
+        display: flex;
+        width: 660px;
+        height: 60px;
+        margin-top: -13px;
+    
+        font-size: 30px;
+        color:#0034bb;
+        padding-left: 5px;
+    
+        background: #edfffe;
+        border:3px solid #edfffe;
+        border-radius: 39px;
+        font-weight: 10px;
+    
+       
+        
+    }
+    /* ENter the text */
+    ::placeholder {
+        color: black;
+        opacity: 0.70;
+        font-size: 21px;
+    }
+}
+
+
